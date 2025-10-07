@@ -10,7 +10,7 @@ resource "azurerm_monitor_metric_alert" "cpu_alert" {
   criteria {
     metric_namespace = "microsoft.insights/components"
     metric_name      = "requests/count"
-    aggregation      = "Total"
+    aggregation      = "Count"
     operator         = "GreaterThan"
     threshold        = 5
   }
